@@ -1,0 +1,54 @@
+/* refunds.wxss */
+page {
+  height: 100%;
+  background: #fdf7e9
+}
+.picker {
+   background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711170455-248.png) 590rpx 32rpx no-repeat;
+   background-size: 36rpx 36rpx;
+}
+.wrap {
+  padding-bottom: 48rpx;
+}
+.box {
+  overflow: hidden;
+  margin-top: 34rpx;
+  padding-bottom: 62rpx;
+  background: #fff;
+  padding: 36rpx 32rpx;
+  box-shadow:  0 0 16rpx 0 rgba(0, 0, 0, 0.2);
+}
+label {
+  font-size: 24rpx;
+  text-align: right;
+  color: #333333;
+  margin-bottom: 26rpx;
+}
+.box input,.box picker {
+  height: 88rpx;
+  font-size: 28rpx;
+  color: #bbb;
+  line-height: 88rpx;
+  border: 0;
+	outline: none;
+	background: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 37rpx;
+}
+.addImage {
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: 32rpx;
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170718/20170718134635-49.png) no-repeat;
+  background-size: 100%;
+}
+ .submit {
+   width :462rpx;
+   height: 80rpx;
+   text-align: center;
+   color: #fff;
+   line-height: 80rpx;
+   background: #ae846c;
+   border-radius: 8rpx;
+   margin: 66rpx auto;
+ }

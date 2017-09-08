@@ -1,0 +1,131 @@
+/**app.wxss**/
+page{
+  background:#fdf7e9;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.swiperImg{
+  width:100%;
+  height:380rpx;
+}
+.wrap{
+  padding:0 32rpx;
+  background:#fdf7e9;
+}
+.wrap::after{
+  display: block;
+  content: '';
+  clear: both;
+  border: 1rpx solid transparent;
+}
+.wrap::before{
+  display: block;
+  content: '';
+  clear: both;
+  /*border: 1rpx solid transparent;*/
+}
+
+
+/*产品列表统一样式*/
+.wrapItem{
+  min-height:240rpx;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  padding:0 20rpx;
+  margin:32rpx 0;
+}
+.wrapItem::after{
+  display: block;
+  content: '';
+  clear: both;
+  border: 1rpx solid transparent;
+}
+.wrapImg{
+  width:240rpx;
+  float: left;
+  padding: 20rpx;
+  box-sizing:border-box;
+}
+.productsWrap{
+  float: right;
+  width:calc(100% - 340rpx);
+  padding-top:20rpx;
+  padding-bottom:60rpx;
+  min-height: 160rpx;
+  position: relative;
+}
+.productNames{
+  font-size: 14px;
+  text-align: left;
+  margin-bottom:16rpx;
+  color: rgba(0, 0, 0, 0.87);
+  height:72rpx;
+  overflow:hidden;
+}
+.productDetails {
+  font-size: 12px;
+  text-align: left;
+  color: #bbbbbb;
+  line-height:34rpx;
+}
+
+      /*产品价格*/
+.productsMoney{
+  overflow: hidden;
+  position: absolute;
+  width:100%;
+  height: 60rpx;
+  bottom: 0rpx;
+}
+.moneyNum{
+  float: left;
+  font-size:24rpx;
+  color: #f6a623;
+  line-height: 48rpx;
+}
+.moneyNum>text{
+  font-size: 32rpx;
+}
+    /*产品价格*/
+
+    /*产品数量、加减操作*/
+.actionNum{
+  float: right;
+  line-height: 48rpx;
+}
+.actionNum view {
+  line-height: 48rpx;
+}
+.actionNum>image{
+  width:48rpx;
+  vertical-align: top;
+}
+productsMoney input {
+  line-height: 48rpx
+}
+    /*产品数量、加减操作*/
+    
+/*产品列表统一样式*/
+
+
+
+
+.boxsha{
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+

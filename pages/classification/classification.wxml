@@ -1,0 +1,9 @@
+<!--classification.wxml-->
+
+<view class="wrap">
+  <view class="{{item.className}}" wx:for="{{sort}}" wx:key="sort" catchtap="goodsList" data-series="{{item.series}}">
+    <image src="{{item.src}}" catchtap="goodsList" data-series="{{item.series}}"></image>
+    <text catchtap="goodsList" data-series="{{item.series}}">{{item.en}}</text>
+    <text catchtap="goodsList" data-series="{{item.series}}">{{item.ch}}</text>
+  </view>
+</view>

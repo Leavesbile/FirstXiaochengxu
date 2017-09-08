@@ -1,0 +1,116 @@
+/* goods.wxss */
+.wrap {
+  padding: 88rpx 32rpx 130rpx 32rpx;
+}
+.goodsList {
+  position: fixed;
+  width: 718rpx;
+  height: 88rpx;
+  padding-left: 32rpx;
+  background-color: #ae846c;
+}
+.goodsList text {
+  float: left;
+  height: 86rpx;
+  line-height: 86rpx;
+  margin-right: 64rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.goodsList .choose {
+  border-bottom: 2px solid #fff;
+}
+.goodsSynopsis {
+  float: left;
+  overflow: hidden;
+  width: 326rpx;
+  padding-bottom: 20rpx;
+  margin: 32rpx 34rpx 0 0;
+  background-color: #fff;
+  box-shadow: 0 0 16rpx 0 rgba(0, 0, 0, 0.2);
+
+}
+.goodsSynopsis image {
+  width:100%;
+  height:326rpx;
+}
+.goodsSynopsis:nth-child(2n){
+  margin-right: 0;
+}
+.goodsName {
+  display: block;
+  padding-left: 20rpx;
+  font-weight: bold;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.87);
+   overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.goodsSynopsis .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.description {
+   display: block;
+  padding-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #bbb;
+ 
+ 
+}
+.price {
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #f6a623;
+}
+.chang {
+  position: absolute;
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+  top: 20rpx;
+  right: 24rpx;
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711173908-675.png) no-repeat;
+  background-size: 100% 100%
+}
+.duan {
+   position: absolute;
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+  top: 20rpx;
+  right: 24rpx;
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711175205-77.png) no-repeat;
+  background-size: 100% 100%
+}
+.long {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 32rpx;
+  background: #fff;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.2);
+}
+.long .goodsName {
+  margin: 20rpx 0;
+}
+.long .description {
+  height: 82rpx;
+  margin-bottom: 10rpx;
+  overflow: hidden
+}
+.long image {
+  float: left;
+  width: 240rpx;
+  height:  240rpx;
+  margin-right: 16rpx;
+}
+.long view {
+  float: left;
+  width: 404rpx;
+}

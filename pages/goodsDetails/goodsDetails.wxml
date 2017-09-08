@@ -1,0 +1,104 @@
+<!--goodsDetails.wxml-->
+<!-- 引入模板 -->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="wrap">
+  <view class="goodsBox">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="" indicator-active-color="#000">
+      <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="details">
+      <text class="goodsName">{{goodsName}}</text>
+      <view class="price">
+        <text class="newPrice">￥{{price}}</text>
+        <text class="postage"></text>
+        <text class="oldPrice">￥{{oldPrice}}</text>
+      </view>
+      <view class="annotation">
+        <text class="adress">{{adress}}</text>
+        <text class="">快递{{postageNum}}</text>
+        <text class="sales">月销{{sales}}笔</text>
+      </view>
+    </view>
+  </view>
+  <view class="Pop-ups">
+    <view class="choose" bindtap="choose">
+      <text wx:if="{{chooseColor == '颜色' || chooseSize == '尺寸'}}">请选择</text><text wx:else>已选</text><text>{{chooseColor}}/{{chooseSize}}</text>
+    </view>
+    <view class="parameterNav" bindtap="parameter">产品参数</view>
+  </view>
+  <view class="Illustration">
+    <view class="IllustrationNav">
+      <view class="classname">
+        <text class="onDetails">商品详细</text><text>售后保障</text>
+      </view>
+    </view>
+    <view class="imgBox">
+      <view class="classname">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="placeOder">
+  <view class="classname">
+    <contact-button size="22" type="default-dark" session-from="{{goodsId}}"><text>客服</text></contact-button>
+    <text class="cart" bindtap="goToCart">购物车</text>
+  </view>
+  <view class="addCar" bindtap="addCart">加入购物车</view>
+  <view class="nowBuy" bindtap="verifyOrder">立即购买(￥{{total}})</view>
+</view>
+<view class="remake {{flag ? '' : 'remake-active'}}" catchtap="closeRemake" catchtouchmove="prevent">
+  <view class="selectSpecifications {{index ? '' : 'selectSpecifications-active'}}" catchtap="prevent">
+    <view class="results">
+      <image src="{{colorImage}}"></image>
+      <view class="classname"><text>请选择颜色分类：</text></view>
+      <view class="close" bindtouchstart="closeRemake"></view>
+      <view class="chooseCon"><text>已选:</text><text>"{{chooseColor}}"</text><text>"{{chooseSize}}"</text></view>
+    </view>
+    <view class="orderColor">
+      <view class="classname">颜色</view>
+      <text wx:for="{{orderColor}}" data-index="{{index}}" catchtap="chooseColor" wx:key="orderColor" class="{{item.className}}">{{item.color}}</text>
+      <view class="classname">尺寸</view>
+      <text wx:for="{{orderSize}}" wx:key="orderSize" class="{{item.className}}" data-index="{{index}}" catchtap="chooseSize">{{item.size}}</text>
+    </view>
+    <view class="quantity">
+      <text>购买数量</text>
+      <view class="actionNum">
+        <image bindtap="minus" src="../images/rectangle-3-copy-5.png" mode="widthFix"></image>
+        <input type="number" style="text-align:center;" value="{{amount}}"/>
+        <image bindtap="plus" src="../images/rectangle-3-copy-2.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <scroll-view class="parameter {{now ? '' : 'parameter-active'}}" scroll-y catchtap="prevent">
+    <view class="tit"><text>产品参数</text> <view class="close" bindtouchstart="closeRemake"></view></view>
+    <view class="classname">
+      <text>品牌</text><text>{{parameter.brand}}</text>
+    </view>
+    <view class="classname">
+      <text>型号</text><text>{{parameter.model}}</text>
+    </view>
+    <view class="classname">
+      <text>安装说明详情</text><text>{{parameter.installation}}</text>
+    </view>
+    <view class="classname">
+      <text>颜色分类</text><text>{{parameter.classification}}</text>
+    </view>
+    <view class="classname">
+      <text>风格</text><text>{{parameter.style}}</text>
+    </view>
+    <view class="classname">
+      <text>图案</text><text>{{parameter.pattern}}</text>
+    </view>
+    <view class="classname">
+      <text>产地</text><text>{{parameter.Origin}}</text>
+    </view>
+    <view class="classname">
+      <text>是否可定制</text><text>{{parameter.feasibility}}</text>
+    </view>
+  </scroll-view>
+</view>

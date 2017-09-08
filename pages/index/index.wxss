@@ -1,0 +1,202 @@
+/**index.wxss**/
+page {
+  width: 100%;
+  height: 100%;
+  background: #fdf7e9;
+  padding-top: 80rpx;
+}
+.indexContainer{
+  position: relative;
+}
+/*搜索  */
+.search {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999999999;
+  width: 668rpx;
+  height: 80rpx;
+  padding-left: 82rpx;
+  background: #fff url(http://papermaker.cn/files/papermaker/applyImages/20170714/20170714134126-156.png) no-repeat 32rpx 24rpx;
+  background-size: 32rpx 32rpx;
+  line-height: 80rpx;
+  font-size: 24rpx; 
+  color: rgba(204, 204, 204, 0.87)
+}
+/*轮播图*/
+.tit {
+  position: relative;
+  height:380rpx;
+  background:#fdf7e9;
+}
+.tit swiper-item{
+  position: relative;
+}
+.tit swiper-item view{
+  position: absolute;
+  left: 40rpx;
+  top:86rpx;
+}
+.tit swiper-item view text{
+  display: block;
+  color:#fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.tit .swiperTitle{
+  font-size:48rpx;
+  font-weight: 600;
+  margin-bottom:20rpx;
+}
+.tit .swiperText{
+  font-size:28rpx;
+}
+/*资讯  */
+.news {
+  height: 96rpx;
+  padding-left: 32rpx;
+  background: #fff;
+}
+.news swiper {
+  float: left;
+  width: 78%;
+  height: 100%;
+}
+.news swiper text {
+  font-size: 24rpx;
+  line-height: 96rpx;
+  color: rgba(51, 51, 51, 0.87);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.news swiper-item {
+  width: 80%;
+}
+.newsTit {
+  float: left;
+  font-size: 28rpx;
+  line-height: 96rpx;
+  color: #f6a623;
+  font-weight: bold;
+}
+/*抢购  */
+.buying {
+  border-top: 1px solid #eee;
+  height: 360rpx;
+  background: #fff;
+  margin-bottom: 22rpx;
+}
+.buying view {
+  float: left;
+}
+.times {
+  width: 50%;
+  height: 100%;
+  padding: 20rpx 0 0 32rpx;
+  border-right: 1px solid #eee;
+  box-sizing: border-box;
+}
+.times .timeBox {
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+  height: 32rpx;
+}
+.times image {
+  display: block;
+  width: 300rpx;
+  height: 220rpx;
+  margin-left: 42rpx;
+}
+.times > text {
+  display: block;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+}
+.timeBox text {
+  float: left;
+}
+.times .number {
+  width: 36rpx;
+  height: 36rpx;
+  background: #000;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+  text-align: center;
+  line-height: 36rpx;
+}
+.times view text:first-child {
+  font-size: 24rpx;
+  background: #fff;
+  color: #333333;
+  margin-right: 10rpx;
+}
+.qianggou {
+  width: 50%;
+  height: 160rpx;
+  padding-top: 20rpx;
+}
+.buying .qianggou:last-child {
+  border-top: 1px solid #eee;
+  box-sizing: border-box
+}
+.qianggou text {
+  display: block;
+  font-size: 28rpx;
+  color: #333;
+  padding-left: 20rpx;
+}
+.qianggou text:nth-child(2) {
+  font-size: 20rpx;
+  color: #cccccc;
+  margin-top: 10rpx;
+}
+.qianggou view {
+  float: left;
+  width:50%;
+}
+.qianggou image {
+  float: left;
+  width: 180rpx;
+  height: 160rpx;
+}
+.promotion {
+  width: 718rpx;
+  height: 240rpx;
+  background: #fff;
+  padding: 32rpx 0 32rpx 32rpx;
+  margin-bottom: 20rpx;
+}
+.goods {
+  float: left;
+  width: 560rpx;
+  height: 240rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+  border-radius: 8rpx;
+}
+.promotion image {
+  width: 100%;
+  height: 100%;
+}
+.promotion .classname {
+  width: 1750rpx;
+  height :240rpx
+}
+/*商品列表  */
+.goodsBox {
+  padding: 0 20rpx;
+}
+.goodsBox image {
+  width : 100%;
+}
+image {
+  display: block;
+}
+
+
+
+
+

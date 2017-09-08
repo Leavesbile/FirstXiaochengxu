@@ -1,0 +1,15 @@
+<!--track.wxml-->
+<view class="wrap">
+    <view class="status">
+    <view class="orderStatus">订单状态：<text>{{status}}</text></view>
+    <view class="orderNumber">订单编号：<text>{{orderNumber}}</text></view>
+    <view class="shipment">快递单号：<text>{{shipmentNumber}}</text></view>
+    <view class="orderTime">下单时间：<text>{{firm}}{{orderTime}}</text></view>
+  </view>
+  <view class="track">
+      <view class="trackDetails" wx:for="{{trackDetails}}" wx:key="trackDetails">
+        <text>{{item.content}}</text>
+        <text>{{item.times}}</text>
+      </view>
+  </view>
+</view>

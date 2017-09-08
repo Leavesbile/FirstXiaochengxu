@@ -1,0 +1,47 @@
+<!--receipt.wxml-->
+<view class="wrap">
+  <view class="status">
+    <view class="orderStatus">订单状态：<text>{{status}}</text></view>
+    <view class="orderNumber">订单编号：<text>{{orderNumber}}</text></view>
+    <view class="shipment" bindtap="more">快递单号：<text>{{shipmentNumber}}</text></view>
+    <view class="orderTime">下单时间：<text>{{firm}}{{orderTime}}</text></view>
+  </view>
+  <view class="goodsBox">
+    <view class="deliveryInf">
+      <view><text class="wenzi">收货姓名：</text><text>{{name}}</text></view>
+      <view class="classname"><text class="wenzi">联系方式：</text><text>{{phone}}</text></view>
+      <view class="classname"><text class="wenzi">收货地址：</text><text class="adress">{{adress}}</text></view>
+    </view>
+    <view class="goods" wx:for="{{product}}" wx:key="product" bindtap="checkGoods" data-goods-id="{{item.goodsId}}">
+      <image src="{{item.goodsImage}}" data-goods-id="{{item.goodsId}}"></image>
+      <view class="goodsDetail" data-goods-id="{{item.goodsId}}">
+        <text class="goodsName" data-goods-id="{{item.goodsId}}">{{item.goodsName}}</text>
+        <text class="sizeColor" data-goods-id="{{item.goodsId}}">规格：{{item.size}}</text>
+        <text class="sizeColor marginBottom" data-goods-id="{{item.goodsId}}">颜色：{{item.color}}</text>
+        <text class="colors">￥</text><text class="price" data-goods-id="{{item.goodsId}}">{{item.price}}</text>
+        <text class="quantity" data-goods-id="{{item.goodsId}}">x{{item.quantity}}</text>
+      </view>
+    </view>
+    <view class="total">
+      <view class="distribution">
+       <text>配送方式：</text><text>{{company}}</text>
+      </view>
+      <view class="classname">
+       <text>商品金额：</text><text class="price">￥{{price}}</text>
+      </view>
+      <view class="classname">
+       <text>运费：</text><text class="fare">￥{{fare}}</text>
+      </view>
+    </view>
+    <view class="tptals">
+      <text class="quantity">共{{quantity}}件商品</text>合计：<text class="colors">￥</text><text class="totalNumber">{{total}}</text>
+    </view>
+  </view>
+  <view class="result">
+    <view class="classname">
+      <text class="refunds" bindtap="{{actionFun1}}">{{action1}}</text>
+      <text class="confirm" bindtap="{{actionFun2}}">{{action2}}</text>
+    </view>
+  </view>
+
+</view>

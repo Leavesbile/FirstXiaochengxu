@@ -1,0 +1,48 @@
+/* track.wxss */
+.wrap {
+  padding-bottom: 52rpx;
+}
+.status {
+  height: 184rpx;
+  padding: 32rpx;
+  margin: 32rpx 0 26rpx 0;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+.status view text, .deliveryInf view text {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.87);
+ 
+}
+.status view text {
+   margin-left: 36rpx;
+}
+.status view,.deliveryInf view {
+  font-size: 24rpx;
+  color: #bbb;
+  margin-bottom: 26rpx;
+}
+.status .orderStatus text{
+  color: #ae846c;
+}
+.track {
+  padding: 32rpx 32rpx 32rpx 108rpx;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.track view {
+  height: 108rpx;
+  border-bottom: 1px solid #eee;
+}
+.track view text {
+  display: block
+}
+.track view text:first-child {
+  margin: 16rpx 0 20rpx 0;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.87)
+}
+.track view text:last-child {
+  font-size: 24rpx;
+   color: rgba(0, 0, 0, 0.26);
+}

@@ -1,0 +1,34 @@
+<!--verifyOrder.wxml-->
+<view class="wrap">
+  <text>收货地址：</text>
+  <view class="address">
+   <view class="" bindtap="address">{{address}}</view>
+  </view>
+  <text>商品详情：</text>
+  <view class="details">
+    <view class="productsList" wx:for="{{products}}" wx:for-item="product" wx:key="product" >
+      <image src="{{product.img}}"></image>
+     <view class="goodsDetail">
+       <view class="statuName">
+         <text class="goodsName">{{product.name}}</text>
+       </view>
+        <text class="sizeColor">规格：{{product.sizes}}</text>
+        <text class="sizeColor">颜色：{{product.colors}}</text>
+        <view class="proMoney">
+          <text class="colors">￥</text><text class="price">{{product.money}}</text>
+          <text class="quantity">x{{product.amount}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="distribution">
+      <text>配送方式:</text><text>第三方快递</text>
+      <text>商品金额:</text><text class="price">￥{{price}}</text>
+      <text>运费:</text><text class="price">￥0.00</text>
+    </view>
+  </view>
+  <view class="huizong">
+    <text>共{{quantity}}件商品</text><text>合计:</text>
+    <text class="price">￥{{price}}</text>
+  </view>
+  <view class="pay">支付</view>
+</view>

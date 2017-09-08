@@ -1,0 +1,9 @@
+<!--template.wxml-->
+<template name="login">
+  <view class="wrapT">
+    <image class="image" src="{{src}}" mode="widthFix"></image>
+    <view class="text">请登录后操作</view>
+    <view class="text">如果您已经登录请刷新或重新打开页面</view>
+    <navigator url="{{url}}">登录</navigator>
+  </view>
+</template>

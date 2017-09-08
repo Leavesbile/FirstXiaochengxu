@@ -1,0 +1,156 @@
+/* verifyOrder.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background: #fdf7e9
+}
+.wrap {
+  padding-top: 52rpx;
+  padding-bottom: 176rpx;
+  position: relative;
+  min-height:100vh;
+  box-sizing:border-box;
+}
+image {
+  float: left;
+  width:240rpx;
+  height: 240rpx;
+  margin-right: 16rpx;
+}
+.goodsDetail {
+  float: left;
+  width: 378rpx;
+}
+.goodsDetail text {
+  float: left;
+  width: 100%;
+}
+.address view {
+  padding-left: 20rpx;
+  padding-right:50rpx; 
+  background: #fff url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711170455-248.png) calc(100% - 20rpx) center no-repeat;
+  background-size: 36rpx;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.2);
+  font-size: 24rpx;
+  line-height: 96rpx;
+  margin-bottom: 52rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.wrap > text {
+  display: block;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.productsList {
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.details {
+  overflow: hidden;
+  background: #fff;
+  padding: 0 20rpx;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.2);
+}
+.statuName {
+  /* height: 28rpx; */
+  padding-right: 32rpx;
+}
+.statuName .goodsName {
+  width: 210rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87); 
+  margin: 16rpx 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.goodsDetail .colors {
+  width: 24rpx;
+  font-size: 24rpx;
+  color: #f6a623;
+  line-height: 40rpx;
+}
+.sizeColor {
+  line-height: 1.5;
+  font-size: 24rpx;
+  color: #bbbbbb;
+}
+.goodsDetail .price {
+  width: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #f6a623;
+}
+.goodsDetail .quantity {
+  float: right;
+  width:35rpx;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  color: #bbbbbb;
+}
+.proMoney{
+  position: absolute;
+  width: calc(100% - 258rpx);
+  right:0;
+  bottom:10rpx;
+}
+.distribution {
+  padding-bottom: 30rpx;
+  overflow: hidden;
+}
+.distribution text {
+  width: 50%;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.price {
+  color: #f6a623;
+}
+.distribution text:nth-child(1), .distribution text:nth-child(2) {
+  margin: 28rpx 0 56rpx;
+}
+.distribution text:nth-child(2n+1) {
+  float: left;
+  text-align: left;
+}
+.distribution text:nth-child(2n) {
+  float: right;
+  text-align: right;
+}
+.huizong {
+  height: 96rpx;
+  padding-left: 372rpx;
+  background: #f8f8f8;
+  box-shadow: 0 0 16rpx 0 rgba(0, 0, 0, 0.2)
+}
+.huizong text {
+  font-size: 24rpx;
+  line-height: 96rpx;
+}
+.huizong text:nth-child(1) {
+  margin-right: 20rpx;
+}
+.huizong text:last-child {
+  font-size: 36rpx;
+}
+.pay {
+  width: 460rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+  background: #ae846c;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom:48rpx;
+  left: calc(50% - 230rpx);
+}
+

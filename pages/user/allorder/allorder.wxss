@@ -1,0 +1,154 @@
+/* allorder.wxss */
+view {
+  overflow: visible;
+}
+.orderNav {
+  height: 128rpx;
+  width:100vw;
+  white-space: nowrap;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow:row nowrap;
+  background: #ae846c;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+}
+.orderNav view {
+  height: 48rpx;
+  width:250rpx;
+  padding-top: 80rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+.orderNav .actives::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left:75rpx;
+  width:100rpx;
+  height:4rpx;
+  background:#FFF;
+}
+.allorder {
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711173107-626.png) no-repeat center 32rpx;
+  background-size: 40rpx 40rpx; 
+}
+.receipt{
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711173650-402.png) no-repeat center 32rpx;
+  background-size: 40rpx 40rpx; 
+}
+.orderNav .choose {
+  border-bottom: 6rpx solid #fff;
+}
+.wait {
+   background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711173456-701.png) no-repeat center 32rpx;
+  background-size: 40rpx 40rpx; 
+}
+.wrap {
+  padding:32rpx;
+  padding-top:160rpx;
+}
+.wrap > view {
+  margin-bottom: 32rpx;
+  background: #fff;
+  box-shadow: 0 0 16rpx 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+.operating {
+  float: left;
+  width: 654rpx;
+  background: #f8f8f8;
+  height: 96rpx;
+  padding-right: 32rpx;
+}
+.operating view {
+  float: right;
+  font-size: 24rpx;
+  line-height: 96rpx;
+}
+.btn2 {
+  color: #f6a623;
+  margin-left: 64rpx; 
+}
+ image {
+  float: left;
+  width:200rpx;
+  height: 200rpx;
+  padding: 20rpx 20rpx 20rpx 0;
+}
+.goodsDetail {
+  float: left;
+  width: 418rpx;
+}
+.goodsDetail text {
+  float: left;
+  width: 100%;
+}
+.statuName {
+  /* height: 28rpx; */
+  padding-right: 32rpx;
+}
+.productList{
+  overflow: hidden;
+  width: 94%;
+  margin: 0 auto;
+  border-bottom:2rpx solid rgba(0,0,0,.12);
+}
+.goodsList > view:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+  margin-bottom:0;
+}
+.statuName .goodsName {
+  width: 280rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87); 
+  margin: 32rpx 0 16rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+.status {
+  position: absolute;
+  width: 80rpx;
+  font-size: 24rpx;
+  color: #ae846c;
+  right:32rpx;
+  top:32rpx;
+}
+.goodsDetail .colors {
+  width: 24rpx;
+  font-size: 24rpx;
+  color: #f6a623;
+  line-height: 40rpx;
+}
+.sizeColor {
+  font-size: 24rpx;
+  color: #bbbbbb;
+  line-height: 1.5;
+}
+.marginBottom{
+  margin-bottom: 38rpx;
+}
+.goodsDetail .price {
+  width: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #f6a623;
+}
+.goodsDetail .quantity {
+  float: right;
+  width:50rpx;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  color: #bbbbbb;
+}

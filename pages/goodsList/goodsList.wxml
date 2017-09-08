@@ -1,0 +1,15 @@
+<view class="goodsList">
+    <text class="{{item.className}}" wx:for="{{filterList}}" wx:key="filterList"
+     bindtap="srotGoods" data-sort="{{item.sort}}" data-order-by="{{item.orderBy}}" data-index="{{index}}">{{item.type}}</text>
+    <view class="{{className}}" bindtap="qiehuan"></view>
+</view>
+<view class="wrap">
+  <view class="{{item.className}}" wx:for="{{goodsSynopsis}}" wx:key="goodsSynopsis" bindtap="goodsDetails" data-id="{{item.id}}">
+    <image src="{{item.goodsImage}}" data-id="{{item.id}}"></image>
+    <view class="" data-id="{{item.id}}">
+      <text class="goodsName" data-id="{{item.id}}">{{item.goodsName}}</text>
+      <text class="description" data-id="{{item.id}}">{{item.description}}</text>
+      <text class="price" data-id="{{item.id}}">￥{{item.price}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<!--refunds.wxml-->
+<view class="wrap">
+  <view class="box">
+    <form>
+     <label>收货状态</label>
+      <picker bindchange="bindPickerChange" value="{{areaIndex}}" range="{{area}}">  
+        <view class="picker">  
+          {{area[areaIndex]}}  
+        </view>  
+      </picker> 
+      <label>退款原因</label> 
+      <input type="text" placeholder="填写您的退款原因" placeholder-style="color: #bbb" />
+      <label>退款金额</label>
+      <input type="text" placeholder="填写您的退款金额" placeholder-style="color: #bbb" />
+      <label>退款说明</label>
+      <input type="text" placeholder="填写您的退款说明" placeholder-style="color: #bbb"/>
+      <label>上传凭证</label>
+      <view class="addImage" bindtap="addImage"></view>
+    </form>
+  </view>
+  <view class="submit" bindtap="submit">提交</view>
+</view>

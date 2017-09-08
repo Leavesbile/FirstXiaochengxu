@@ -1,0 +1,26 @@
+ /* classification.wxss */
+
+ .wrap {
+    padding: 0;
+    min-height:100vh;
+ }
+ .wrap view {
+   float: left;
+   width: 50%;
+   height: 376rpx;
+ }
+ .wrap .white {
+   background: #fff;
+ }
+ .wrap image {
+   display: block;
+   width: 240rpx;
+   height: 240rpx;
+   margin: 28rpx auto 10rpx;
+ }
+ .wrap text {
+   display: block;
+   text-align: center;
+   font-size: 24rpx;
+   color: rgba(0, 0, 0, 0.87);
+ }

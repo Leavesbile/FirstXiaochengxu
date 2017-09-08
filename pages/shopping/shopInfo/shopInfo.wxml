@@ -1,0 +1,68 @@
+<!--shopInfo.wxml-->
+<import src="../../template/template" />
+<view wx:if="{{userId != ''}}">
+<view class="wrap">
+  <checkbox-group wx:if="{{carts}}" bindchange="numbers">
+    <view class="touchAction boxsha" data-indexproduct="{{indexProduct}}" bindtouchstart="mytouchstart" bindtouchmove="mytouchmove" bindtouchend="mytouchend"
+   wx:for="{{shopProducts}}" wx:key="shopProducts" wx:for-item="shopProduct" wx:for-index="indexProduct">
+      <view class="productAction " animation="{{shopProduct.animation}}">
+        <!--产品统一页面结构-->
+        <view class="wrapItem">
+          <label>
+            <view class="label" bindtap="checkbox" data-indexs="{{indexProduct}}">
+              <checkbox value="{{indexProduct}}" checked="{{shopProduct.type}}" hidden="true" />
+              <icon data-indexs="{{indexProduct}}" class="aIcon" type="{{shopProduct.type ? 'success' : 'circle'}}" size="18" color="{{shopProduct.type ? '#FFB491' : ''}}" />
+            </view>
+          </label>
+          <image class="wrapImg" mode="widthFix" src="{{shopProduct.img}}" bindtap="goodsDetails" data-goods-id="{{shopProduct.goodsId}}"></image>
+          <view class="productsWrap">
+            <view class="productNames" bindtap="goodsDetails" data-goods-id="{{shopProduct.goodsId}}">{{shopProduct.productNmae}}</view>
+            <view class="productDetails">
+              颜色: {{shopProduct.color}}
+            </view>
+            <view class="productDetails">
+              规格: {{shopProduct.size}}
+            </view>
+            <view class="productsMoney">
+              <view class="moneyNum">￥<text>{{shopProduct.money}}</text></view>
+              <view class="actionNum">
+                <image bindtap="minus" data-indexproduct="{{indexProduct}}" src="../../images/rectangle-3-copy-5.png" mode="widthFix"></image>
+                <input class="count" type="number" value="{{shopProduct.amount}}" /> 
+                <image bindtap="plus" data-indexproduct="{{indexProduct}}" src="../../images/rectangle-3-copy-2.png" mode="widthFix"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!--产品统一页面结构-->
+
+        <!--删除按钮-->
+        <view class="deleteAction" data-indexproduct="{{indexProduct}}" bindtap="delete" data-goods-id="{{shopProduct.goodsId}}">
+
+        </view>
+        <!--删除按钮-->
+      </view>
+    </view>
+  </checkbox-group>
+</view>
+<view wx:if="{{!carts}}" class="noGoods">
+  <text>购物车空空如也</text>
+  <text>快去挑选心宜的商品吧</text>
+</view>
+<view class="total">
+    <view class="money">
+      <label bindtap="allCheckTap">
+        <checkbox value="all" checked="{{allCheck}}" hidden="true"/>
+        <icon type="{{allCheck ? 'success' : 'circle'}}" size="20" color="{{allCheck ? '#FFB491' : ''}}" />
+        <text>全选</text>
+      </label>
+      <text class="deleteAll" bindtap="deleteAll">删除</text>
+    </view>
+    <view class="settlement" bindtap="goToSettlement">去结算(￥{{totals}})</view>
+</view>
+</view>
+
+
+
+<block wx:if="{{userId == ''}}">
+  <template is="login" data="{{src:'../../images/icon-password.png',url:'../../login/login'}}" />
+</block>

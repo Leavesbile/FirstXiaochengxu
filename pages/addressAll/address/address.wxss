@@ -1,0 +1,119 @@
+/* address.wxss */
+view {
+  overflow: visible;
+}
+page{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 32rpx;
+  background-color: #fdf7e9;
+  position: relative;
+}
+.addWrap{
+  background: #FFF;
+  padding:0 32rpx 65rpx;
+  box-shadow: 0 0 16rpx 0 rgba(0, 0, 0, 0.2);
+}
+.name{
+  line-height: 80rpx;
+  font-size: 24rpx;
+}
+.value{
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.confirm{
+  width: 462rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color:#FFF;
+  border-radius: 8rpx;
+  background-color: #ae846c;
+  box-shadow: 0 0 16rpx 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 48rpx;
+  left: calc(50% - 231rpx);
+  z-index: 1;
+}
+.address{
+  font-size: 28rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711170455-248.png) calc(100%) center no-repeat;
+  background-size: 36rpx 36rpx;
+}
+.pick{
+  height: 448rpx;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2
+}  
+picker-view{
+  height: 448rpx;
+  background: #FFF;
+}
+picker-view-column{
+  height: 448rpx
+}
+picker-view-column view{
+  line-height: 68rpx;
+  height:96rpx;
+  text-align: center;
+}
+
+.mask{
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 3;
+  width:100vw;
+  height:100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+.cityheader {
+  position: absolute;
+  top: 10rpx;
+  width: 100%;
+  z-index: 4;
+  background: #FFF;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #ae846c;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #ae846c
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

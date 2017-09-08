@@ -1,0 +1,121 @@
+/* userInfo.wxss */
+ @import "../../template/template.wxss";
+page {
+  padding: 330rpx 32rpx 0;
+  border-top:1px solid #fdf7e9; 
+  background:#fdf7e9 url(http://papermaker.cn/files/img/product_miniImage/20170620/m20170620145547_713.png) center no-repeat;
+  background-size: 180%;
+}
+.userName{
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top:92rpx;
+  width: 750rpx;
+  height:240rpx;
+  background:url(https://www.papermaker.cn/files/papermaker/applyImages/20170715/20170715175138-149.png) center no-repeat;
+  background-size: 100%;
+}
+.userImg image{
+  display: block;
+  width:148rpx;
+  height:148rpx;
+  border-radius:50%;
+  border:10rpx solid #fff;
+  margin:46rpx auto 0;
+  vertical-align: middle;
+}
+.userImg{
+  text-align: center;
+  font-size:32rpx;
+  color:#000;
+  border-top:1px solid transparent; 
+}
+.userImg view{
+  background: #fff;
+  padding-bottom: 20rpx;
+  margin: 24rpx auto 0;
+  width: 686rpx;
+}
+
+
+.userDetail{
+  width: 686rpx;
+  height:670rpx;
+  padding-top:80rpx;
+  background:#fff;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.2)
+}
+.userItem{
+  height:96rpx;
+  padding:0 32rpx 0 90rpx;
+}
+.userItem view {
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711170455-248.png) 528rpx 32rpx no-repeat;
+  background-size: 36rpx 36rpx;
+}
+/*订单左图标*/
+.userDetail .userItem:first-child {
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711171413-341.png) no-repeat 32rpx 32rpx;
+  background-size: 40rpx 40rpx;
+}
+.userDetail .userItem:nth-child(2){
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711171903-845.png) no-repeat 32rpx 32rpx;
+  background-size: 40rpx 40rpx;
+}
+.userDetail .userItem:nth-child(3){
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711172502-383.png) no-repeat 32rpx 32rpx;
+    background-size: 40rpx 40rpx;
+}
+.userDetail .userItem:nth-child(4){
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711172131-631.png) no-repeat 32rpx 32rpx;
+    background-size: 40rpx 40rpx;
+}
+.userDetail .userItem:last-child {
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170711/20170711172407-71.png) no-repeat 32rpx 32rpx;
+    background-size: 40rpx 40rpx;
+}
+.userClass{
+  line-height:96rpx;
+  height:94rpx;
+  font-size:28rpx;
+  color:#333;
+  border-bottom: 1px solid #eee
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

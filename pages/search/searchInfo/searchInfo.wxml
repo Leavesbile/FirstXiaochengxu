@@ -1,0 +1,25 @@
+<!--searchInfo.wxml-->
+<view class="search">
+  <view class="searchInput">
+    <input type="text" confirm-type="search" placeholder="搜索商品" placeholder-class="input-placeholder" focus="true"
+    bindconfirm="inputConfirm" bindinput="inputValue" />
+  </view>
+  <text bindtap="searchBtn">搜索</text>
+</view>
+<view class="wrap">
+  <view class="histroySearch">
+    <text>历史搜索</text>
+    <view class="histroyList">
+        <text wx:for="{{historyList}}" wx:key="historyList" bindtap="history" data-key="{{item}}">{{item}}</text>
+    </view>
+  </view>
+  <!-- <view class="projuct" wx:for="{{historyProjucts}}" wx:key="historyProjucts">
+    <image src="{{item.img}}"></image>
+    <view class="projuctD">
+      <text class="projuctName">{{item.name}}</text>
+      <text class="projuctDesc">{{item.desc}}</text>
+      <text class="money">￥<text>{{item.money}}</text></text>
+      <text class="sales">销量: {{item.sales}}</text>
+    </view>
+  </view> -->
+</view>

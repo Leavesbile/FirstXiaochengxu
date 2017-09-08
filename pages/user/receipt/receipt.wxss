@@ -1,0 +1,165 @@
+/* receipt.wxss */
+.status {
+  padding: 32rpx;
+  margin: 32rpx 0 26rpx 0;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+.wrap::before{
+  display: block;
+  content: '';
+  border-top:1rpx solid transparent;
+}
+.status view text, .deliveryInf view text {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.87);
+ 
+}
+.status view text {
+   margin-left: 36rpx;
+}
+.deliveryInf text {
+  float: left
+}
+.deliveryInf .wenzi {
+  margin-right: 32rpx;
+  color: #bbb;
+}
+.deliveryInf .adress {
+  width: 460rpx;
+  height: 68rpx;
+  line-height: 34rpx;
+}
+.status view,.deliveryInf view {
+  font-size: 24rpx;
+  color: #bbb;
+  margin-bottom: 26rpx;
+}
+.deliveryInf view {
+  height: 28rpx;
+}
+.status .orderStatus text{
+  color: #ae846c;
+}
+.goodsBox {
+  padding: 32rpx;
+  background: #fff;
+  box-shadow:  0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.deliveryInf {
+  padding-bottom: 32rpx;
+  border-bottom: 1px solid #eee;
+}
+.goods {
+  height: 240rpx;
+  border-bottom: 1px solid #eee;
+}
+.goods image {
+  float: left;
+  width:240rpx;
+  height: 240rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.goodsDetail {
+  float: left;
+  width:366rpx;
+}
+.goodsDetail text {
+  float: left;
+  width: 100%;
+}
+.goodsName {
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87); 
+  margin: 16rpx 0;
+  height:72rpx;
+  overflow:hidden;
+}
+.sizeColor {
+  font-size: 24rpx;
+  color: #bbbbbb;
+  line-height: 1.5
+}
+.marginBottom{
+  margin-bottom:12rpx;
+}
+.goodsDetail .price {
+  width: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #f6a623;
+}
+.goodsDetail .quantity {
+  float: right;
+  width:50rpx;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  color: #bbbbbb;
+}
+.total text {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.87);
+}
+.distribution text:nth-child(1) {
+  float: left
+}
+.total > view text:nth-child(1) {
+  float: left;
+}
+.total > view text:nth-child(2) {
+  float: right;
+}
+.total > .distribution {
+  height: 40rpx;
+  margin: 28rpx 0 56rpx 0;
+}
+.total > view {
+  height: 40rpx;
+}
+.total .price, .total .fare,.totalNumber, .colors {
+  font-size: 24rpx;
+  color: #f6a623;
+}
+.goods .colors {
+  width: 24rpx;
+  line-height: 32rpx;
+}
+.total {
+  padding-bottom: 16rpx;
+   border-bottom: 1px solid #eee;
+}
+.goodsBox > text {
+  height: 76rpx;
+  font-size: 24rpx;
+  line-height: 76rpx;
+}
+.tptals {
+  font-size: 24rpx;
+  line-height: 76rpx;
+}
+.quantity {
+  margin-right: 20rpx
+}
+.totalNumber {
+  font-size: 36rpx;
+  font-weight: bold
+}
+.result view {
+  height: 96rpx;
+  padding-left: 406rpx;
+  background: #f8f8f8;
+}
+.confirm {
+  color: #f6a623
+}
+.result view text {
+  font-size: 24rpx;
+  margin-right: 64rpx;
+  line-height: 96rpx;
+}
+.wrap {
+  padding-bottom: 54rpx
+}

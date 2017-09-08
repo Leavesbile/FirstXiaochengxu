@@ -1,0 +1,166 @@
+/* shopInfo.wxss */
+ @import "../../template/template.wxss";
+.wrap{
+  min-height:calc(100vh - 88rpx);
+  padding-bottom:88rpx;
+}
+.wrap::before {
+  display:block;
+  content:'';
+  clear:both;
+  border:1rpx solid transparent;
+}
+
+.total{
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom:0;
+  height:88rpx;
+  width:100%;
+  background: #fff;
+  line-height: 88rpx;
+}
+.settlement{
+  float: right;
+  width:240rpx;
+  height:88rpx;
+  text-align: center;
+  color:#fff;
+  font-size: 28rpx;
+  background: #ffb491;
+}
+.money{
+  float: left;
+  padding-left:32rpx; 
+  width:calc(100% - 300rpx);
+  font-size:28rpx;
+}
+.money>text{
+  color:#f6a623;
+}
+.totalMoney{
+  font-size: 24rpx;
+}
+
+
+/*产品*/
+.touchAction{
+  margin:32rpx 0;
+  overflow: hidden;
+}
+.productAction{
+  width:calc(100% + 96rpx);
+}
+.productAction::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.wrapItem{
+  float: left;
+  width: calc(100% - 116rpx);
+  margin:0;
+  padding-left: 0
+}
+.classActive{
+  transition: all 0.5s linear;
+  transform: translateX(-96rpx);
+}
+.productsMoney input{
+  display: inline-block;
+  width:48rpx;
+  height:48rpx;
+  line-height: 48rpx;
+  text-align: center;
+}
+.aIcon{
+  position: relative;
+  z-index: 1;
+}
+/*删除按钮*/
+.deleteAction{
+  width:96rpx;
+  min-height:244rpx;
+  height: 100%;
+  float: left;
+  background: #ae846c url(http://papermaker.cn/files/papermaker/applyImages/20170715/20170715150412-852.png) center no-repeat;
+  background-size: 48rpx;
+}
+
+/*多选按钮*/
+.wrapItem label{
+  display: block;
+  float: left;
+  min-width:18px;
+  width:36rpx;
+  height:240rpx;
+  padding:0 20rpx;
+}
+.wrapItem label icon{
+  margin-top:102rpx;
+}
+.label{
+  height:240rpx;
+  position: relative;
+  z-index: 3;
+}
+.money label icon{
+  float: left;
+  margin-top:18rpx;
+}
+.money label text{
+  display: inline-block;
+  margin-left:6rpx;
+  margin-right:66rpx;
+}
+.deleteAll{
+  padding-left:40rpx;
+  background: url(http://papermaker.cn/files/papermaker/applyImages/20170715/20170715145134-440.png) left center  no-repeat;
+  background-size: 36rpx;
+}
+.noGoods {
+  position: absolute;
+  left: 50%;
+  top: 188rpx;
+  width: 300rpx;
+  margin-left: -150rpx;
+  padding-top: 166rpx;
+   background: url(http://papermaker.cn/files/papermaker/applyImages/20170712/20170712094327-517.png) no-repeat center 10rpx;
+  background-size: 128rpx ;
+}
+.noGoods text {
+  display: block;
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/order/orderInfo/orderInfo",
+    "pages/shopping/shopInfo/shopInfo",
+    "pages/user/userInfo/userInfo",
+    "pages/search/searchInfo/searchInfo",
+    "pages/goodsList/goodsList",
+    "pages/user/refunds/refunds",
+    "pages/user/receipt/receipt",
+    "pages/user/allorder/allorder",
+    "pages/goodsDetails/goodsDetails",
+    "pages/classification/classification",
+    "pages/user/track/track",
+    "pages/addressAll/address/address",
+    "pages/addressAll/addressList/addressList",
+    "pages/success/success",
+    "pages/complete/complete",
+    "pages/verifyOrder/verifyOrder",
+    "pages/limit/limit",
+    "pages/login/login",
+    "pages/registered/registered",
+    "pages/forget/forget",
+    "pages/template/template"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ae846c",
+    "navigationBarTitleText": "纸匠商城",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home@3x.png",
+        "selectedIconPath": "pages/images/home_active@3x.png"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "pages/images/fenlei.png",
+        "selectedIconPath": "pages/images/dafenlei.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopInfo/shopInfo",
+        "text": "购物车",
+        "iconPath": "pages/images/shopping_car@3x.png",
+        "selectedIconPath": "pages/images/shopping_car_active@3x.png"
+      },
+      {
+        "pagePath": "pages/user/userInfo/userInfo",
+        "text": "我的",
+        "iconPath": "pages/images/me@3x.png",
+        "selectedIconPath": "pages/images/me_active@3x.png"
+      }
+    ],
+    "color": "#ffffff",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#ae846c",
+    "position": "bottom",
+    "borderStyle": "white"
+  },
+  "debug": true
+}

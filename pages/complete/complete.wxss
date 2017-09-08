@@ -1,0 +1,49 @@
+/* complete.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.wancheng {
+ padding-top: 128rpx;
+  overflow: hidden;
+  margin-bottom: 144rpx;
+}
+
+.wancheng icon {
+   display: block;
+    margin:  0 auto;
+    text-align: center;
+}
+.wancheng text {
+  display: block;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 72rpx;
+}
+.classname {
+  overflow: hidden
+}
+.classname view {
+  float: left;
+  width: 260rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  margin-right: 70rpx;
+  text-align: center;
+  line-height: 80rpx;
+  box-shadow:  0 0 16rpx 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8rpx;
+}
+.classname view:nth-child(1) {
+  margin-left: 80rpx;
+  background: #fff;
+}
+.classname view:nth-child(2) {
+  background: #ae846c;
+  color: #fff;
+}

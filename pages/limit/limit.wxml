@@ -1,0 +1,36 @@
+<view class="wrap">
+  <view class="time">当前场次 <text>{{hours}}</text> : <text>{{miutes}}</text> : <text>{{second}}</text> 后结束抢购</view>
+  <view class="shoppingItem" wx:for="{{shoppingItem}}" wx:key="shoppingItem">
+    <image src="{{item.img}}" mode="widthFix"></image>
+    <text class="name">{{item.name}}</text>
+    <view class="desc">{{item.desc}}</view>
+    <view class="total">
+      <view class="left">
+        <text class="color">￥<text class="bigTotal">{{item.total}}</text></text>
+        <text class="oldTotal">￥{{item.oldTotal}}</text>
+      </view>
+      <view class="right buying">抢购</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

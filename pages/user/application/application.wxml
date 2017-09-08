@@ -1,0 +1,13 @@
+<!--application.wxml-->
+<view class="wrap">
+  <view class="wancheng">
+    <view class=""></view>
+    <text>您的退款申请已提交</text>
+    <text>等待系统审核…</text>
+  </view>
+  <view class="classname">
+   <view class="check">查看订单</view>
+   <view class="home">返回首页</view>
+  </view>
+</view>
+

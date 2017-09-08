@@ -1,0 +1,12 @@
+<!--success.wxml-->
+<view class="wrap">
+  <view class="wancheng">
+    <icon type="success" size="70" color="#ae846c"/>
+    <text>您的退款申请已提交
+等待系统审核…</text>
+  </view>
+  <view class="classname">
+   <view class="check">查看订单</view>
+   <view class="home">返回首页</view>
+  </view>
+</view>

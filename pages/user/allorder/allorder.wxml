@@ -1,0 +1,28 @@
+<!--allorder.wxml-->
+<scroll-view scroll-x class="orderNav" scroll-into-view="{{scrollView}}">
+  <view wx:for="{{nav}}" wx:key="nav" id="{{item.id}}" class="{{item.className + ' ' + item.actives}}" bindtap="tabOrder" data-index="{{index}}">{{item.content}}</view>
+</scroll-view>
+<view class="wrap">
+  <view class="orderList" wx:for="{{ 2 < 1 ? '' : orderList}}" wx:key="orderList" wx:for-item="order">
+
+  <text class="status">{{order.status}}</text>
+    <view class="goodsList" bindtap="receipt" data-list="{{order.dealId}}">
+      <view wx:for="{{order.product}}" wx:key="product" wx:for-item="product" class="productList" data-list="{{order.dealId}}">
+        <image src="{{product.goodsImage}}" data-list="{{order.dealId}}"></image>
+        <view class="goodsDetail" data-list="{{order.dealId}}">
+        <view class="statuName" data-list="{{order.dealId}}">
+          <text class="goodsName" data-list="{{order.dealId}}">{{product.goodsName}}</text>
+        </view>
+          <text class="sizeColor" data-list="{{order.dealId}}">颜色：{{product.color}}</text>
+          <text class="sizeColor marginBottom" data-list="{{order.dealId}}">规格：{{product.size}}</text>
+          <text class="colors" data-list="{{order.dealId}}">￥</text><text class="price" data-list="{{order.dealId}}">{{product.price}}</text>
+          <text class="quantity" data-list="{{order.dealId}}">x{{product.quantity}}</text>
+        </view>
+      </view>
+    </view>
+      <view class="operating">
+        <view class="btn2" bindtap="{{order.navTo2}}">{{order.btn2}}</view>
+        <view class="btn1" bindtap="{{order.navTo1}}" data-list="{{order.dealId}}">{{order.btn1}}</view>
+      </view>
+  </view>
+</view>

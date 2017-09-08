@@ -1,0 +1,118 @@
+/* addressList.wxss */
+pages{
+  font-size: 24rpx;
+}
+.wrap{
+  box-sizing: border-box;
+  font-size: 24rpx;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 176rpx;
+}
+.containerWrap{
+  width: 100%;
+  overflow: hidden;
+}
+.deleteWrap{
+  width: calc(100% + 100rpx);
+  margin-top:32rpx;
+}
+.addressList{
+  background: #FFF;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  padding:32rpx;
+  box-sizing: border-box;
+  float: left;
+  width: calc(100% - 100rpx)
+}
+.userInfo{
+  overflow:hidden;
+}
+.name{
+  float:left;
+}
+.tel{
+  float: right;
+}
+.userAdd{
+  padding-bottom: 16rpx;
+  margin-top: 40rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.12);
+}
+.defaultAdd{
+  overflow: hidden;
+  margin:32rpx 0 0 16rpx;
+}
+.setDefault,setDefault text{
+  float: left;
+  line-height: 36rpx;
+}
+.edit{
+  float: right;
+  line-height: 36rpx;
+}
+radio {
+  transform: scale(0.75)
+}
+.confirm{
+  width: 462rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color:#FFF;
+  border-radius: 8rpx;
+  background-color: #ae846c;
+  box-shadow: 0 0 16rpx 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 48rpx;
+  left: calc(50% - 231rpx);
+  z-index: 1;
+}
+/*删除按钮*/
+.deleteAction{
+  width:96rpx;
+  min-height: 256rpx;
+  height: 100%;
+  float: left;
+  background: #ae846c url(http://papermaker.cn/files/papermaker/applyImages/20170715/20170715150412-852.png) center no-repeat;
+  background-size: 48rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

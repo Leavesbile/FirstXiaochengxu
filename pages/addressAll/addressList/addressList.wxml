@@ -1,0 +1,50 @@
+<!--addressList.wxml-->
+<view class="wrap">
+  <radio-group bindchange="setDefalut">
+    <view class="containerWrap" data-indexproduct="{{index}}" wx:for="{{shopProducts}}" wx:key="add" 
+    bindtouchstart="mytouchstart" bindtouchmove="mytouchmove" bindtouchend="mytouchend">
+      <view class="deleteWrap" animation="{{item.animation}}">
+        <view class="addressList">
+          <view bindtap="addressChecked" data-index="{{index}}">
+            <view class="userInfo" data-index="{{index}}">
+              <text class="name" data-index="{{index}}">{{item.userName}}</text>
+              <text class="tel" data-index="{{index}}">{{item.userTel}}</text>
+            </view>
+            <view class="userAdd" data-index="{{index}}">{{item.userAddress}}</view>
+          </view>
+          <view class="defaultAdd">
+            <view class="setDefault">
+              <label>
+                <radio value="{{index}}" checked="{{item.checked}}" color="#FFB491"/>
+                <text>默认地址</text>
+              </label>
+            </view>
+            <view class="edit" bindtap="edit" data-index="{{index}}" data-address-id="{{item.addressId}}">编辑</view>
+          </view>
+        </view>
+        <!--删除按钮-->
+        <view class="deleteAction" data-indexproduct="{{index}}" bindtap="delete">
+
+        </view>
+        <!--删除按钮-->
+      </view>
+    </view>
+  </radio-group>
+  <button class="confirm" bindtap="add">新增地址</button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<!--login.wxml-->
+<view class="wrap">
+  <view class="logo"></view>
+  <form>
+    <label>用户名</label>
+    <input type="text" placeholder="纸匠商城账号" placeholder-class="colors" bindblur="userName" />
+    <label>密码</label>
+    <input password="{{passwordtype}}" placeholder="纸匠商城密码"  placeholder-class="colors" bindblur="password"/>
+    <text bindtap="forget">忘记密码？</text>
+  </form>
+  <view class="login" bindtap="login">登录</view>
+  <view class="registered" bindtap="registered"><text>注册</text></view>
+</view>
+

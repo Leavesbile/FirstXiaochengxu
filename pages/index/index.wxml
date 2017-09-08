@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view class="indexContainer">
+  <navigator url="../search/searchInfo/searchInfo" hover-class="none">
+    <view class="search">搜索纸匠商品</view>
+  </navigator>
+  <swiper class="tit" indicator-dots="true" indicator-color="rgba(0,0,0,0.2)" indicator-active-color="#ffffff" autoplay="true" interval="3000" duration="500"
+  circular="true" current="0">
+    <block wx:for="{{swiperUrls}}" wx:key="1">
+      <swiper-item>
+        <image class="swiperImg" src="{{item.img}}" bindtap="goodsDetails"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="news">
+    <text class="newsTit">商城资讯：</text>
+    <swiper class=""  circular="true" current="0" vertical = "true" autoplay="true">
+      <block wx:for="{{newsUrls}}" wx:key="1">
+        <swiper-item>
+          <view>
+            <text class="newsTitle">{{item.title}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="buying">
+    <view class="times" bindtap="goToLimit">
+      <text>限时抢购</text>
+      <view class="timeBox">
+        <text>距结束</text>
+        <text class="number">00</text>
+        <text>:</text>
+        <text class="number">12</text>
+        <text>:</text>
+        <text class="number">12</text>
+      </view>
+      <image src="{{qianggouSrc}}"></image>
+    </view>
+    <view class="qianggou" wx:for="{{qianggou}}" wx:key="qianggou" bindtap="{{item.event}}">
+      <view class="classname">
+        <text>{{item.gongneng}}</text>
+        <text>{{item.gongnengEn}}</text>
+      </view>
+      <image src="{{item.src}}"></image>
+    </view>
+  </view>
+  <scroll-view  class="promotion" scroll-x>
+    <view class="classname">
+      <view class="goods" wx:for="{{goods}}" wx:key="goods">
+        <image src="{{item.src}}"></image>
+      </view>   
+    </view>
+  </scroll-view>
+  <view class="goodsList">
+    <view class="goodsBox" wx:for="{{goodsBox}}" wx:key="goodsBox">
+       <navigator url="../goodsDetails/goodsDetails?goodsId=039067161d8e438497747155e7a71f92" hover-class="none"><image src="{{item.src}}" mode="widthFix"></image></navigator>
+    </view>
+  </view>
+</view>
